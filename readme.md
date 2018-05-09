@@ -31,7 +31,11 @@ mock('./file', {
 
 import('./file')
   .then(console.log)
-  .catch(console.error)
+  .then(() => {
+    unmock('./file')
 
-unmock('./file')
+    return import('./file')
+  })
+  .then(console.log)
+  .catch(console.error)
 ```
