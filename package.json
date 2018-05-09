@@ -1,0 +1,106 @@
+{
+  "name": "mocku",
+  "version": "0.1.0",
+  "description": "ESM mocking library",
+  "keywords": "esm, import, mock",
+  "homepage": "https://github.com/deepsweet/mock-mock",
+  "repository": "deepsweet/mock-mock",
+  "author": "Kir Belevich <kir@belevi.ch> (https://twitter.com/deepsweet)",
+  "license": "MIT",
+  "files": [
+    "build/"
+  ],
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "engines": {
+    "node": ">=6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.46",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0-beta.46",
+    "@babel/preset-env": "^7.0.0-beta.46",
+    "@babel/preset-typescript": "^7.0.0-beta.46",
+    "@babel/register": "^7.0.0-beta.46",
+    "@deepsweet/start-preset-node-ts-lib": "^0.1.0-1",
+    "@start/cli": "^0.1.0-6",
+    "@start/reporter-verbose": "^0.1.0-2",
+    "@types/node": "^10.0.5",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "esm": "3.0.31",
+    "tap-diff": "^0.1.1",
+    "typescript": "^2.8.3",
+    "typescript-eslint-parser": "^15.0.0"
+  },
+  "start": {
+    "preset": "@deepsweet/start-preset-node-ts-lib",
+    "require": [
+      "esm",
+      [
+        "@babel/register",
+        {
+          "presets": [
+            [
+              "@babel/preset-env",
+              {
+                "targets": {
+                  "node": "current"
+                },
+                "modules": false
+              }
+            ],
+            "@babel/preset-typescript"
+          ],
+          "plugins": [
+            "@babel/plugin-syntax-dynamic-import"
+          ],
+          "extensions": [
+            ".ts",
+            ".js"
+          ]
+        }
+      ]
+    ],
+    "reporter": "@start/reporter-verbose"
+  },
+  "eslintConfig": {
+    "parser": "typescript-eslint-parser",
+    "plugins": [
+      "standard",
+      "node",
+      "promise"
+    ],
+    "extends": [
+      "standard",
+      "plugin:node/recommended",
+      "plugin:promise/recommended"
+    ],
+    "env": {
+      "node": true
+    },
+    "rules": {
+      "no-undef": "off",
+      "no-unused-vars": "off",
+      "space-infix-ops": "off",
+      "node/no-unsupported-features": [
+        "error",
+        {
+          "ignores": [
+            "asyncAwait",
+            "modules",
+            "restProperties",
+            "spreadProperties"
+          ]
+        }
+      ],
+      "promise/avoid-new": "off"
+    }
+  },
+  "dependencies": {
+    "get-caller-file": "^1.0.2"
+  }
+}
