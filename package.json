@@ -101,6 +101,7 @@
     }
   },
   "dependencies": {
-    "get-caller-file": "^1.0.2"
+    "get-caller-file": "^1.0.2",
+    "tape-promise": "^3.0.0"
   }
 }
