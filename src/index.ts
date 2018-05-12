@@ -5,12 +5,17 @@ import getCallerFile from 'get-caller-file'
 type Mocks = {
   [key: string]: any
 }
+type Meta = {
+  filename: string,
+  parent: Meta | null, // eslint-disable-line no-use-before-define
+  [key: string]: any
+}
 
 const _Module: any = Module
 const originalLoad = _Module._load
 const mocked = new Map<string, Mocks>()
 
-const getMocks = (meta) => {
+const getMocks = (meta: Meta) => {
   if (mocked.has(meta.filename)) {
     return mocked.get(meta.filename)
   }
@@ -25,12 +30,12 @@ const getMocks = (meta) => {
 export const mock = (file: string, mocks: Mocks) => {
   const callerDir = path.dirname(getCallerFile())
   const targetFile = path.resolve(callerDir, file)
-  const fullPath = _Module._resolveFilename(targetFile)
+  const fullPath: string = _Module._resolveFilename(targetFile)
 
   mocked.set(fullPath, mocks)
 
   if (mocked.size === 1) {
-    _Module._load = (request, meta, ...rest) => {
+    _Module._load = (request: string, meta: Meta, ...rest) => {
       const mocks = getMocks(meta)
 
       if (mocks !== null && Reflect.has(mocks, request)) {
@@ -42,7 +47,7 @@ export const mock = (file: string, mocks: Mocks) => {
   }
 }
 
-const isCacheRelated = (target, meta) => {
+const isCacheRelated = (target: string, meta: Meta) => {
   if (target === meta.filename) {
     return true
   }
@@ -57,10 +62,10 @@ const isCacheRelated = (target, meta) => {
 export const unmock = (file: string) => {
   const callerDir = path.dirname(getCallerFile())
   const targetFile = path.resolve(callerDir, file)
-  const fullPath = _Module._resolveFilename(targetFile)
+  const fullPath: string = _Module._resolveFilename(targetFile)
 
   _Module._cache = Object.keys(_Module._cache).reduce((result, key) => {
-    const meta = _Module._cache[key]
+    const meta: Meta = _Module._cache[key]
 
     if (!isCacheRelated(fullPath, meta)) {
       result[key] = meta
