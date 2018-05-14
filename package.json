@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "description": "ESM mocking library",
   "keywords": "esm, import, mock",
-  "homepage": "https://github.com/deepsweet/mock-mock",
-  "repository": "deepsweet/mock-mock",
+  "homepage": "https://github.com/deepsweet/mocku",
+  "repository": "deepsweet/mocku",
   "author": "Kir Belevich <kir@belevi.ch> (https://twitter.com/deepsweet)",
   "license": "MIT",
   "files": [
