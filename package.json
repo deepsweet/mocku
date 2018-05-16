@@ -33,6 +33,7 @@
     "eslint-plugin-standard": "^3.0.1",
     "esm": "^3.0.34",
     "tap-diff": "^0.1.1",
+    "tape-promise": "^3.0.0",
     "typescript": "^2.8.3",
     "typescript-eslint-parser": "^15.0.0"
   },
@@ -101,7 +102,6 @@
     }
   },
   "dependencies": {
-    "get-caller-file": "^1.0.2",
-    "tape-promise": "^3.0.0"
+    "get-caller-file": "^1.0.2"
   }
 }
