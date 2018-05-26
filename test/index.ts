@@ -70,7 +70,7 @@ test('scoped file: mock', async (t) => {
 
   t.deepEqual(
     result,
-    { default: 'mock' },
+    'mock',
     'should mock'
   )
 })
@@ -82,7 +82,7 @@ test('scoped file: unmock', async (t) => {
 
   t.deepEqual(
     result,
-    { default: 'file2' },
+    'file2',
     'should unmock'
   )
 })
@@ -98,7 +98,7 @@ test('not scoped file: mock', async (t) => {
 
   t.deepEqual(
     result,
-    { default: 'file2' },
+    'file2',
     'should not mock'
   )
 
