@@ -70,15 +70,13 @@ export const unmock = (file: string) => {
   const targetFile = path.resolve(callerDir, file)
   const fullPath: string = _Module._resolveFilename(targetFile)
 
-  _Module._cache = Object.keys(_Module._cache).reduce((result, key) => {
+  Object.keys(_Module._cache).forEach((key) => {
     const meta: Meta = _Module._cache[key]
 
-    if (!isCacheRelated(fullPath, meta)) {
-      result[key] = meta
+    if (isCacheRelated(fullPath, meta)) {
+      Reflect.deleteProperty(_Module._cache, key)
     }
-
-    return result
-  }, {})
+  })
 
   mocked.delete(fullPath)
 
