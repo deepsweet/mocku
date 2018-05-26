@@ -39,7 +39,13 @@ export const mock = (file: string, mocks: Mocks) => {
       const mocks = getMocks(meta)
 
       if (mocks !== null && Reflect.has(mocks, request)) {
-        return mocks[request]
+        const mock = mocks[request]
+
+        Reflect.defineProperty(mock, '__esModule', {
+          value: true
+        })
+
+        return mock
       }
 
       return originalLoad(request, meta, ...rest)
