@@ -8,7 +8,7 @@
   dependencies:
     "@babel/highlight" "7.0.0-beta.49"
 
-"@babel/core@^7.0.0-0", "@babel/core@^7.0.0-beta.47", "@babel/core@^7.0.0-beta.49":
+"@babel/core@^7.0.0-0", "@babel/core@^7.0.0-beta.49":
   version "7.0.0-beta.49"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.0.0-beta.49.tgz#73de2081dd652489489f0cb4aa97829a1133314e"
   dependencies:
@@ -232,7 +232,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "7.0.0-beta.49"
 
-"@babel/plugin-syntax-dynamic-import@^7.0.0-0", "@babel/plugin-syntax-dynamic-import@^7.0.0-beta.47":
+"@babel/plugin-syntax-dynamic-import@^7.0.0-0":
   version "7.0.0-beta.49"
   resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-dynamic-import/-/plugin-syntax-dynamic-import-7.0.0-beta.49.tgz#f0af7ac6b53676a496093d4a6e2a2ec655c07b78"
   dependencies:
@@ -404,7 +404,7 @@
   dependencies:
     regenerator-transform "^0.12.3"
 
-"@babel/plugin-transform-runtime@^7.0.0-beta.47":
+"@babel/plugin-transform-runtime@^7.0.0-0":
   version "7.0.0-beta.49"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-runtime/-/plugin-transform-runtime-7.0.0-beta.49.tgz#65a30ec0bc36f4249325dbc2438f97f563b41f1a"
   dependencies:
@@ -458,7 +458,7 @@
     "@babel/helper-regex" "7.0.0-beta.49"
     regexpu-core "^4.1.3"
 
-"@babel/preset-env@^7.0.0-0", "@babel/preset-env@^7.0.0-beta.47":
+"@babel/preset-env@^7.0.0-0":
   version "7.0.0-beta.49"
   resolved "https://registry.yarnpkg.com/@babel/preset-env/-/preset-env-7.0.0-beta.49.tgz#4a8a8b92139f51fa2f90fbf6f1fad7597532aebc"
   dependencies:
@@ -502,14 +502,14 @@
     invariant "^2.2.2"
     semver "^5.3.0"
 
-"@babel/preset-typescript@^7.0.0-0", "@babel/preset-typescript@^7.0.0-beta.47":
+"@babel/preset-typescript@^7.0.0-0":
   version "7.0.0-beta.49"
   resolved "https://registry.yarnpkg.com/@babel/preset-typescript/-/preset-typescript-7.0.0-beta.49.tgz#20a3c4a2f815efe7416f756b433c0fd9907a47ad"
   dependencies:
     "@babel/helper-plugin-utils" "7.0.0-beta.49"
     "@babel/plugin-transform-typescript" "7.0.0-beta.49"
 
-"@babel/register@^7.0.0-0", "@babel/register@^7.0.0-beta.47":
+"@babel/register@^7.0.0-0":
   version "7.0.0-beta.49"
   resolved "https://registry.yarnpkg.com/@babel/register/-/register-7.0.0-beta.49.tgz#57e823a5062e3ddd25548398e9f5077c17991f08"
   dependencies:
@@ -560,34 +560,37 @@
     lodash "^4.17.5"
     to-fast-properties "^2.0.0"
 
-"@deepsweet/start-preset-node-ts-lib@^0.1.0-1":
-  version "0.1.0-3"
-  resolved "https://registry.yarnpkg.com/@deepsweet/start-preset-node-ts-lib/-/start-preset-node-ts-lib-0.1.0-3.tgz#f718afb917776cc71d6f97d92b0ae368a472f4f3"
+"@deepsweet/start-preset-node-ts-lib@^0.1.0-5":
+  version "0.1.0-5"
+  resolved "https://registry.yarnpkg.com/@deepsweet/start-preset-node-ts-lib/-/start-preset-node-ts-lib-0.1.0-5.tgz#2f8f7c5386fbf9d3bc162a442e0e9eaafe86f2ec"
   dependencies:
-    "@babel/core" "^7.0.0-beta.47"
-    "@babel/plugin-syntax-dynamic-import" "^7.0.0-beta.47"
-    "@babel/plugin-transform-runtime" "^7.0.0-beta.47"
-    "@babel/preset-env" "^7.0.0-beta.47"
-    "@babel/preset-typescript" "^7.0.0-beta.47"
-    "@babel/register" "^7.0.0-beta.47"
+    "@babel/core" "^7.0.0-0"
+    "@babel/plugin-syntax-dynamic-import" "^7.0.0-0"
+    "@babel/plugin-transform-runtime" "^7.0.0-0"
+    "@babel/preset-env" "^7.0.0-0"
+    "@babel/preset-typescript" "^7.0.0-0"
+    "@babel/register" "^7.0.0-0"
     "@start/plugin-find" "^0.1.0"
-    "@start/plugin-lib-babel" "^0.1.0"
+    "@start/plugin-lib-babel" "^0.1.1"
     "@start/plugin-lib-codecov" "^0.1.0"
-    "@start/plugin-lib-eslint" "^0.1.0"
-    "@start/plugin-lib-istanbul" "^0.1.0"
+    "@start/plugin-lib-eslint" "^0.1.1"
+    "@start/plugin-lib-istanbul" "^0.1.1"
     "@start/plugin-lib-npm-publish" "^0.1.0"
     "@start/plugin-lib-npm-version" "^0.1.0"
-    "@start/plugin-lib-tape" "^0.1.0"
-    "@start/plugin-lib-typescript-check" "^0.1.0"
-    "@start/plugin-lib-typescript-generate" "^0.1.0"
-    "@start/plugin-overwrite" "^0.1.0"
+    "@start/plugin-lib-tape" "^0.1.1"
+    "@start/plugin-lib-typescript-check" "^0.1.1"
+    "@start/plugin-lib-typescript-generate" "^0.1.1"
+    "@start/plugin-overwrite" "^0.1.1"
     "@start/plugin-parallel" "^0.1.0"
-    "@start/plugin-read" "^0.1.0"
+    "@start/plugin-read" "^0.1.1"
     "@start/plugin-remove" "^0.1.0"
-    "@start/plugin-rename" "^0.1.0"
+    "@start/plugin-rename" "^0.1.1"
     "@start/plugin-sequence" "^0.1.0"
-    "@start/plugin-watch" "^0.1.0"
-    "@start/plugin-write" "^0.1.1"
+    "@start/plugin-watch" "^0.1.1"
+    "@start/plugin-write" "^0.1.3"
+    "@start/reporter-verbose" "^0.1.0"
+    esm "^3.0.48"
+    tap-diff "^0.1.1"
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
@@ -600,12 +603,6 @@
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.0.tgz#50c1e2260ac0ed9439a181de3725a0168d59c48a"
 
-"@start/cli@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@start/cli/-/cli-0.1.2.tgz#b3636c1c5abaed896bbe68391b7f99145a768f07"
-  dependencies:
-    "@babel/runtime" "^7.0.0-0"
-
 "@start/plugin-find@^0.1.0":
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/@start/plugin-find/-/plugin-find-0.1.0.tgz#6e795a37e40112195486021aa5ae66dd6906db95"
@@ -614,7 +611,7 @@
     "@start/plugin" "^0.1.0-0"
     globby "^8.0.1"
 
-"@start/plugin-lib-babel@^0.1.0":
+"@start/plugin-lib-babel@^0.1.1":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@start/plugin-lib-babel/-/plugin-lib-babel-0.1.1.tgz#b9bb663e33beff5b497fd5f975f3567e23109299"
   dependencies:
@@ -630,7 +627,7 @@
     "@start/plugin" "^0.1.0-0"
     codecov-lite "^0.1.3"
 
-"@start/plugin-lib-eslint@^0.1.0":
+"@start/plugin-lib-eslint@^0.1.1":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@start/plugin-lib-eslint/-/plugin-lib-eslint-0.1.1.tgz#4484bdc2d405be908056a6788db0480863b7cd67"
   dependencies:
@@ -638,7 +635,7 @@
     "@start/plugin" "^0.1.0-0"
     eslint "^4.18.2"
 
-"@start/plugin-lib-istanbul@^0.1.0":
+"@start/plugin-lib-istanbul@^0.1.1":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@start/plugin-lib-istanbul/-/plugin-lib-istanbul-0.1.1.tgz#21e9e0f74e96364d2c58794fdf4242edd6c3d99d"
   dependencies:
@@ -668,7 +665,7 @@
     "@start/plugin" "^0.1.0-0"
     execa "^0.10.0"
 
-"@start/plugin-lib-tape@^0.1.0":
+"@start/plugin-lib-tape@^0.1.1":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@start/plugin-lib-tape/-/plugin-lib-tape-0.1.1.tgz#4eb85f89b598c91765122c0cb4eb180512176c47"
   dependencies:
@@ -677,7 +674,7 @@
     tape "^4.9.0"
     through "^2.3.8"
 
-"@start/plugin-lib-typescript-check@^0.1.0":
+"@start/plugin-lib-typescript-check@^0.1.1":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@start/plugin-lib-typescript-check/-/plugin-lib-typescript-check-0.1.1.tgz#48e4d47b8ab17027ced6f1214f3efc09b27c66db"
   dependencies:
@@ -685,7 +682,7 @@
     "@start/plugin" "^0.1.0-0"
     execa "^0.10.0"
 
-"@start/plugin-lib-typescript-generate@^0.1.0":
+"@start/plugin-lib-typescript-generate@^0.1.1":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@start/plugin-lib-typescript-generate/-/plugin-lib-typescript-generate-0.1.1.tgz#4edb43149c31c3c04bd0115fec85a4ad70aec047"
   dependencies:
@@ -693,7 +690,7 @@
     "@start/plugin" "^0.1.0-0"
     execa "^0.10.0"
 
-"@start/plugin-overwrite@^0.1.0":
+"@start/plugin-overwrite@^0.1.1":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@start/plugin-overwrite/-/plugin-overwrite-0.1.1.tgz#bed6ea1ef706a757f06ec434f067fc076a0bd1e6"
   dependencies:
@@ -711,7 +708,7 @@
     execa "^0.10.0"
     p-all "^1.0.0"
 
-"@start/plugin-read@^0.1.0":
+"@start/plugin-read@^0.1.1":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@start/plugin-read/-/plugin-read-0.1.1.tgz#76cd17b86200a9ffa319649912887a5c3c1ee527"
   dependencies:
@@ -729,7 +726,7 @@
     makethen "^0.2.2"
     rimraf "^2.6.2"
 
-"@start/plugin-rename@^0.1.0":
+"@start/plugin-rename@^0.1.1":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@start/plugin-rename/-/plugin-rename-0.1.1.tgz#815bf310f6864d1ccfe6c872d83d01127e7af49d"
   dependencies:
@@ -743,7 +740,7 @@
     "@babel/runtime" "^7.0.0-0"
     "@start/plugin" "^0.1.0-0"
 
-"@start/plugin-watch@^0.1.0":
+"@start/plugin-watch@^0.1.1":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@start/plugin-watch/-/plugin-watch-0.1.1.tgz#f2cc1c7e933273d6c8fdbd02ff6901003eee09f3"
   dependencies:
@@ -751,7 +748,7 @@
     "@start/plugin" "^0.1.0-0"
     chokidar "^2.0.2"
 
-"@start/plugin-write@^0.1.1":
+"@start/plugin-write@^0.1.3":
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/@start/plugin-write/-/plugin-write-0.1.3.tgz#2390dcb33531e400cdd167d9ae6c470e760e50e1"
   dependencies:
@@ -1605,9 +1602,9 @@ eslint@^4.18.2, eslint@^4.19.1:
     table "4.0.2"
     text-table "~0.2.0"
 
-esm@3.0.47:
-  version "3.0.47"
-  resolved "https://registry.yarnpkg.com/esm/-/esm-3.0.47.tgz#e6773649dc23c4b2dd496eecc0cf0c0ad951c418"
+esm@^3.0.48:
+  version "3.0.48"
+  resolved "https://registry.yarnpkg.com/esm/-/esm-3.0.48.tgz#24bf3834428b44cac7d953bb5b196d2e4ec0d815"
 
 espree@^3.5.4:
   version "3.5.4"
@@ -2473,7 +2470,14 @@ js-tokens@^3.0.0, js-tokens@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
 
-js-yaml@^3.2.7, js-yaml@^3.7.0, js-yaml@^3.9.1:
+js-yaml@^3.2.7:
+  version "3.12.0"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.12.0.tgz#eaed656ec8344f10f527c6bfa1b6e2244de167d1"
+  dependencies:
+    argparse "^1.0.7"
+    esprima "^4.0.0"
+
+js-yaml@^3.7.0, js-yaml@^3.9.1:
   version "3.11.0"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.11.0.tgz#597c1a8bd57152f26d622ce4117851a51f5ebaef"
   dependencies:
