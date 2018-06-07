@@ -560,6 +560,18 @@
     lodash "^4.17.5"
     to-fast-properties "^2.0.0"
 
+"@deepsweet/eslint-config-node-ts@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@deepsweet/eslint-config-node-ts/-/eslint-config-node-ts-0.1.0.tgz#a99234b807e74676fe16e232877aae08af7a6c7b"
+  dependencies:
+    eslint "^4.19.1"
+    eslint-config-standard "^11.0.0"
+    eslint-plugin-import "^2.12.0"
+    eslint-plugin-node "^6.0.1"
+    eslint-plugin-promise "^3.8.0"
+    eslint-plugin-standard "^3.0.1"
+    typescript-eslint-parser "^16.0.0"
+
 "@deepsweet/start-preset-node-ts-lib@^0.1.0-5":
   version "0.1.0-5"
   resolved "https://registry.yarnpkg.com/@deepsweet/start-preset-node-ts-lib/-/start-preset-node-ts-lib-0.1.0-5.tgz#2f8f7c5386fbf9d3bc162a442e0e9eaafe86f2ec"
@@ -1516,7 +1528,7 @@ eslint-module-utils@^2.2.0:
     debug "^2.6.8"
     pkg-dir "^1.0.0"
 
-eslint-plugin-import@^2.11.0:
+eslint-plugin-import@^2.12.0:
   version "2.12.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.12.0.tgz#dad31781292d6664b25317fd049d2e2b2f02205d"
   dependencies:
@@ -1540,7 +1552,7 @@ eslint-plugin-node@^6.0.1:
     resolve "^1.3.3"
     semver "^5.4.1"
 
-eslint-plugin-promise@^3.7.0:
+eslint-plugin-promise@^3.8.0:
   version "3.8.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-promise/-/eslint-plugin-promise-3.8.0.tgz#65ebf27a845e3c1e9d6f6a5622ddd3801694b621"
 
