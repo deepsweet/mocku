@@ -574,8 +574,8 @@
     typescript-eslint-parser "^16.0.0"
 
 "@deepsweet/start-preset-node-ts-lib@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@deepsweet/start-preset-node-ts-lib/-/start-preset-node-ts-lib-0.2.0.tgz#ea4c6f5e840c6d2df1182fd8a92e0282815cee3b"
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@deepsweet/start-preset-node-ts-lib/-/start-preset-node-ts-lib-0.2.1.tgz#7dafb034d57143127fe4f2373681bdecff0781e0"
   dependencies:
     "@babel/core" "^7.0.0-0"
     "@babel/plugin-syntax-dynamic-import" "^7.0.0-0"
@@ -696,12 +696,13 @@
     execa "^0.10.0"
 
 "@start/plugin-lib-typescript-generate@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@start/plugin-lib-typescript-generate/-/plugin-lib-typescript-generate-0.2.0.tgz#e8cc8635eb4cf525804ceecca447e551b00abd44"
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@start/plugin-lib-typescript-generate/-/plugin-lib-typescript-generate-0.2.1.tgz#ad4425241a4ada21acce05a4a2339c31fbdbc6b8"
   dependencies:
     "@babel/runtime" "^7.0.0-0"
     "@start/plugin" "^0.2.0"
     execa "^0.10.0"
+    move-path "^0.1.0"
 
 "@start/plugin-overwrite@^0.2.0":
   version "0.2.0"
@@ -785,8 +786,8 @@
     stack-utils "^1.0.1"
 
 "@types/node@^10.3.1":
-  version "10.3.6"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.3.6.tgz#ea8aab9439b59f40d19ec5f13b44642344872b11"
+  version "10.5.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.5.1.tgz#d578446f4abff5c0b49ade9b4e5274f6badaadfc"
 
 abbrev@1:
   version "1.1.1"
@@ -1053,8 +1054,8 @@ base@^0.11.1:
     pascalcase "^0.1.1"
 
 bcrypt-pbkdf@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/bcrypt-pbkdf/-/bcrypt-pbkdf-1.0.1.tgz#63bc5dcb61331b92bc05fd528953c33462a06f8d"
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/bcrypt-pbkdf/-/bcrypt-pbkdf-1.0.2.tgz#a4301d389b6a43f9b67ff3ca11a3f6637e360e9e"
   dependencies:
     tweetnacl "^0.14.3"
 
@@ -1132,8 +1133,8 @@ camelcase@^1.0.2:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-1.2.1.tgz#9bb5304d2e0b56698b2c758b08a3eaa9daa58a39"
 
 caniuse-lite@^1.0.30000844:
-  version "1.0.30000859"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000859.tgz#da974adc5348fffe94724877a7ef8cb5d6d3d777"
+  version "1.0.30000861"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000861.tgz#a32bb9607c34e4639b497ff37de746fc8a160410"
 
 caseless@~0.12.0:
   version "0.12.0"
@@ -1622,8 +1623,8 @@ eslint@^4.18.2, eslint@^4.19.1:
     text-table "~0.2.0"
 
 esm@^3.0.52:
-  version "3.0.55"
-  resolved "https://registry.yarnpkg.com/esm/-/esm-3.0.55.tgz#db784239760c60b919785953eb3c01cfbc9745d4"
+  version "3.0.59"
+  resolved "https://registry.yarnpkg.com/esm/-/esm-3.0.59.tgz#1ad16cc999f473953641ab5f6d137f9965bf54ef"
 
 espree@^3.5.4:
   version "3.5.4"
@@ -2228,16 +2229,6 @@ is-number@^3.0.0:
   dependencies:
     kind-of "^3.0.2"
 
-is-number@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/is-number/-/is-number-4.0.0.tgz#0026e37f5454d73e356dfe6564699867c6a7f0ff"
-
-is-odd@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/is-odd/-/is-odd-2.0.0.tgz#7646624671fd7ea558ccd9a2795182f2958f1b24"
-  dependencies:
-    is-number "^4.0.0"
-
 is-path-cwd@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/is-path-cwd/-/is-path-cwd-1.0.0.tgz#d225ec23132e89edd38fda767472e62e65f1106d"
@@ -2653,15 +2644,14 @@ nan@^2.9.2:
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.10.0.tgz#96d0cd610ebd58d4b4de9cc0c6828cda99c7548f"
 
 nanomatch@^1.2.9:
-  version "1.2.9"
-  resolved "https://registry.yarnpkg.com/nanomatch/-/nanomatch-1.2.9.tgz#879f7150cb2dab7a471259066c104eee6e0fa7c2"
+  version "1.2.13"
+  resolved "https://registry.yarnpkg.com/nanomatch/-/nanomatch-1.2.13.tgz#b87a8aa4fc0de8fe6be88895b38983ff265bd119"
   dependencies:
     arr-diff "^4.0.0"
     array-unique "^0.3.2"
     define-property "^2.0.2"
     extend-shallow "^3.0.2"
     fragment-cache "^0.2.1"
-    is-odd "^2.0.0"
     is-windows "^1.0.2"
     kind-of "^6.0.2"
     object.pick "^1.3.0"
@@ -3666,8 +3656,8 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
 typescript-eslint-parser@^16.0.0:
-  version "16.0.0"
-  resolved "https://registry.yarnpkg.com/typescript-eslint-parser/-/typescript-eslint-parser-16.0.0.tgz#14a9ab75932b15af919602faef553c6f0487f352"
+  version "16.0.1"
+  resolved "https://registry.yarnpkg.com/typescript-eslint-parser/-/typescript-eslint-parser-16.0.1.tgz#b40681c7043b222b9772748b700a000b241c031b"
   dependencies:
     lodash.unescape "4.0.1"
     semver "5.5.0"
@@ -3743,8 +3733,8 @@ util-deprecate@~1.0.1:
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
 
 uuid@^3.1.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.0.tgz#b237147804881d7b86f40a7ff8f590f15c37de32"
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
 
 validate-npm-package-license@^3.0.1:
   version "3.0.3"
