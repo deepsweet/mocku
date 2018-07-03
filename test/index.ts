@@ -4,38 +4,19 @@ import Module from 'module'
 import { mock, unmock } from '../src/'
 
 const _Module: any = Module
+const originalLoad = _Module._load
 
 test('Module: hook', (t) => {
-  t.notOk(
-    _Module._load.toString().includes('getMocks'),
-    'Module._load should be unhooked if nothing has been mocked'
-  )
-
   mock('./fixtures/scoped/file', {
     './file2': {
       default: 'mock1'
     }
   })
 
-  t.ok(
-    _Module._load.toString().includes('getMocks'),
+  t.notEqual(
+    originalLoad,
+    _Module._load,
     'Module._load should be hooked'
-  )
-
-  const ModuleLoadFirst = _Module._load
-
-  mock('./fixtures/scoped/file3', {
-    './file2': {
-      default: 'mock2'
-    }
-  })
-
-  const ModuleLoadSecond = _Module._load
-
-  t.equal(
-    ModuleLoadFirst,
-    ModuleLoadSecond,
-    'Module._load should be hooked only once'
   )
 
   t.end()
@@ -44,15 +25,9 @@ test('Module: hook', (t) => {
 test('Module: unhook', (t) => {
   unmock('./fixtures/scoped/file')
 
-  t.ok(
-    _Module._load.toString().includes('getMocks'),
-    'Module._load should be still hooked after first unmock'
-  )
-
-  unmock('./fixtures/scoped/file3')
-
-  t.notOk(
-    _Module._load.toString().includes('getMocks'),
+  t.equal(
+    originalLoad,
+    _Module._load,
     'Module._load should be unhooked if there are no mocks'
   )
 
