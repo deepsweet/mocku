@@ -13,10 +13,24 @@ test('Module: hook', (t) => {
     }
   })
 
+  const mockedLoad = _Module._load
+
+  mock('./fixtures/scoped/file3', {
+    './file2': {
+      default: 'mock2'
+    }
+  })
+
   t.notEqual(
     originalLoad,
     _Module._load,
     'Module._load should be hooked'
+  )
+
+  t.equal(
+    mockedLoad,
+    _Module._load,
+    'Module._load should be hooked only once'
   )
 
   t.end()
@@ -24,6 +38,14 @@ test('Module: hook', (t) => {
 
 test('Module: unhook', (t) => {
   unmock('./fixtures/scoped/file')
+
+  t.notEqual(
+    originalLoad,
+    _Module._load,
+    'Module._load should be still hooked after first unmock'
+  )
+
+  unmock('./fixtures/scoped/file3')
 
   t.equal(
     originalLoad,
