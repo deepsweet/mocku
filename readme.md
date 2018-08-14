@@ -4,6 +4,11 @@
 
 ESM mocking library.
 
+## Requirements
+
+* Node.js >= 6
+* [`esm` loader](https://github.com/standard-things/esm)
+
 ## Install
 
 ```sh
