@@ -1,6 +1,6 @@
 {
   "name": "mocku",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "ESM mocking library",
   "keywords": "esm, import, mock",
   "homepage": "https://github.com/deepsweet/mocku",
