@@ -33,7 +33,7 @@ export const mock = (file: string, mocks: Mocks) => {
   const fullPath: string = _Module._resolveFilename(targetFile)
 
   // TODO: test me
-  _Module._cache = {}
+  _Module._cache = Object.create(null)
 
   mocked.set(fullPath, mocks)
 
@@ -62,7 +62,7 @@ export const unmock = (file: string) => {
   const fullPath: string = _Module._resolveFilename(targetFile)
 
   // TODO: test me
-  _Module._cache = {}
+  _Module._cache = Object.create(null)
 
   mocked.delete(fullPath)
 
