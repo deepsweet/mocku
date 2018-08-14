@@ -10,17 +10,19 @@
   "files": [
     "build/"
   ],
-  "main": "build/index.js",
+  "main": "build/esm-loader.js",
+  "module": "build/index.js",
   "types": "build/index.d.ts",
   "engines": {
     "node": ">=6"
   },
   "dependencies": {
+    "esm": "^3.0.76",
     "get-caller-file": "^1.0.2"
   },
   "devDependencies": {
     "@deepsweet/eslint-config-node-ts": "^0.1.0",
-    "@deepsweet/start-preset-node-ts-lib": "^0.2.0",
+    "@deepsweet/start-preset-node-ts-lib": "^0.3.0",
     "@types/node": "^10.3.1",
     "tape-promise": "^3.0.0",
     "typescript": "^2.9.1"
