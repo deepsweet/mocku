@@ -1,7 +1,7 @@
 import test from 'tape-promise/tape'
 import Module from 'module'
 
-import { mock, unmock } from '../src/'
+import { mock, unmock, deleteFromCache } from '../src/'
 
 const _Module: any = Module
 const originalLoad = _Module._load
@@ -142,5 +142,19 @@ test('modules: unmock', async (t) => {
     typeof transform,
     'function',
     'should unmock external module'
+  )
+})
+
+test('modules: deleteFromCache', async (t) => {
+  t.true(
+    Reflect.has(_Module._cache, require.resolve('tape-promise')),
+    'check for cache'
+  )
+
+  deleteFromCache('tape-promise')
+
+  t.false(
+    Reflect.has(_Module._cache, require.resolve('tape-promise')),
+    'should delete from cache'
   )
 })
