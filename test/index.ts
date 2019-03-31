@@ -1,4 +1,4 @@
-import test from 'tape-promise/tape'
+import test from 'blue-tape'
 import Module from 'module'
 
 import { mock, unmock, deleteFromCache } from '../src/'
@@ -147,14 +147,14 @@ test('modules: unmock', async (t) => {
 
 test('modules: deleteFromCache', async (t) => {
   t.true(
-    Reflect.has(_Module._cache, require.resolve('tape-promise')),
+    Reflect.has(_Module._cache, require.resolve('blue-tape')),
     'check for cache'
   )
 
-  deleteFromCache('tape-promise')
+  deleteFromCache('blue-tape')
 
   t.false(
-    Reflect.has(_Module._cache, require.resolve('tape-promise')),
+    Reflect.has(_Module._cache, require.resolve('blue-tape')),
     'should delete from cache'
   )
 })
