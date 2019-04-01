@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@deepsweet/eslint-config-node-ts": "^0.2.1",
-    "@deepsweet/start-preset-node-ts-lib": "^0.7.2",
+    "@deepsweet/start-preset-node-ts-lib": "^0.8.2",
     "@types/blue-tape": "^0.1.32",
     "@types/node": "^11.12.2",
     "blue-tape": "^1.0.0",
